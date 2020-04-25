@@ -77,7 +77,7 @@ def all_holidays_with_bbq(holiday_hash)
       holiday if supply.include?("BBQ")
     end
   end
-  bbq.flatten.compact
+  bbq.flatten.compact # returned nil for some reason before, compact removes nil elements
 end
 
 
